@@ -51,7 +51,6 @@ else {
     if (confirmSkip) {
         window.alert(playerName + " has decided to skip this fight. Goodbye!");
         playerMoney = playerMoney - 2;
-        console.log
     }
     else{
         fight();
