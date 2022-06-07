@@ -19,6 +19,13 @@ var fight = function(enemyNames) {
 
 var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
 
+var fight = function(enemyName) {
+
+
+for(var i = 0; i<enemyNames.length; i++) {
+    fight(enemyNames[i]);
+}
+
 if (promptFight === "fight" || promptFight === "FIGHT") {
 enemyHealth = enemyHealth - playerAttack;
 
@@ -60,11 +67,4 @@ else {
 } else {
     window.alert("You need to choose a valid option. Try again!");
 }
-
-var fight = function(enemyNames) {
-    //
-}
-
-for(var i = 0; i < enemyNames.length; i++) {
-    fight(enemyNames[i]);
 }
